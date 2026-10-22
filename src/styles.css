@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Inter;
+  src: url('/assets/inter.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+:root {
+  color: #292d25;
+  background: #f6f5f0;
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html { scroll-behavior: smooth; }
+body { min-width: 320px; margin: 0; }
+button, a, input, summary { -webkit-tap-highlight-color: transparent; }
+button, summary { cursor: pointer; }
+:focus-visible { outline: 3px solid #8d7043; outline-offset: 5px; }
+::selection { color: #fff; background: #626c50; }
+.eyebrow { color: #747c65; font-size: 10px; font-weight: 500; letter-spacing: .18em; }
+
+.tv-frame {
+  width: 100%;
+  padding: 9px 9px 14px;
+  border: 1px solid #41443c;
+  border-radius: 15px;
+  background: #252721;
+  box-shadow: 0 25px 45px -25px #373a3560, 0 3px 8px #26282220;
+}
+.tv-frame::after {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #858b7c;
+  content: '';
+}
+.comparison-range { margin: 0; touch-action: pan-y; }
+.comparison-range::-webkit-slider-thumb { width: 44px; height: 44px; appearance: none; }
+.comparison-range::-moz-range-thumb { width: 44px; height: 44px; border: 0; }
+.relative:has(> .comparison-range:focus-visible) { outline: 3px solid #d7dcbf; outline-offset: 5px; }
+.image-dialog {
+  position: fixed;
+  width: min(1200px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: #f6f5f0;
+  color: #292d25;
+  box-shadow: 0 20px 100px #0006;
+}
+.image-dialog::backdrop { background: #171a16da; backdrop-filter: blur(7px); }
+
+@media (max-width: 640px) {
+  .tv-frame { padding: 5px 5px 9px; border-radius: 10px; }
+  .tv-frame::after { bottom: 3px; width: 2px; height: 2px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
