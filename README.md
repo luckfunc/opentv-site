@@ -19,3 +19,7 @@ npm run preview
 ```
 
 构建产物位于 `dist/`。
+
+## 相关项目
+
+- [Android 应用源码](https://github.com/luckfunc/open-tv)

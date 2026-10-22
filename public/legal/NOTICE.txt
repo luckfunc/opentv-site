@@ -1,4 +1,5 @@
 OpenTV modifications are copyright (c) 2026 luckfunc and released under the MIT License.
+Project repository: https://github.com/luckfunc/open-tv
 
 OpenTV contains code derived from Aerial (https://github.com/pengchujin/aerial-tv).
 Original copyright: Copyright (c) 2026 pengchujin.

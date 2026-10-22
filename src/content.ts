@@ -30,11 +30,11 @@ export const desktop: Screenshot = {
 };
 
 export const release: Release = {
-  version: '0.3.12',
+  version: '0.3.15',
   channel: '测试版',
-  downloadUrl: '/downloads/OpenTV-0.3.12-guard.apk',
-  filename: 'OpenTV-0.3.12-guard.apk',
-  bytes: 2466642,
+  downloadUrl: '/downloads/OpenTV-0.3.15-guard.apk',
+  filename: 'OpenTV-0.3.15-guard.apk',
+  bytes: 1833477,
 };
 
 export const installSteps: InstallStep[] = [
