@@ -37,6 +37,14 @@ export const release: Release = {
   bytes: 1833477,
 };
 
+export const diagnosticRelease: Release = {
+  version: '0.3.16',
+  channel: '诊断版 · Debug',
+  downloadUrl: '/downloads/OpenTV-0.3.16-guard-diagnostics.apk',
+  filename: 'OpenTV-0.3.16-guard-diagnostics.apk',
+  bytes: 1859049,
+};
+
 export const installSteps: InstallStep[] = [
   {
     id: 'connect', title: '开启 ADB',
