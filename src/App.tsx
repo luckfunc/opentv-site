@@ -48,7 +48,7 @@ export default function App() {
               <div className="max-w-[650px]">
                 <p className="text-xs font-medium tracking-wide text-[#65695d]">问题反馈专用 · v{diagnosticRelease.version}</p>
                 <h3 className="mt-2 text-2xl tracking-tight">诊断版下载（Debug）</h3>
-                <p className="mt-4 text-sm leading-7 text-[#65695d]">适合 ADB 已开启但连接不上、授权等待或设置无法继续的用户。此版本会记录检查阶段和错误原因，方便反馈；安装后仍需复现问题，不能保证直接修复。</p>
+                <p className="mt-4 text-sm leading-7 text-[#65695d]">适合 ADB 已开启但连接不上、授权等待或设置无法继续的用户。此版本会显示具体失败步骤、错误码和异常摘要，拍照即可反馈；也可扫码导出完整报告。安装后需重新检查，不能保证直接修复。</p>
                 <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm leading-7 text-[#4b5142]">
                   <li>下载下方 v{diagnosticRelease.version} 诊断版，覆盖安装，保留原有数据。</li>
                   <li>回到 OpenTV 设置向导，重新检查一次，再打开「查看诊断」。</li>

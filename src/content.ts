@@ -38,11 +38,11 @@ export const release: Release = {
 };
 
 export const diagnosticRelease: Release = {
-  version: '0.3.16',
+  version: '0.3.17',
   channel: '诊断版 · Debug',
-  downloadUrl: '/downloads/OpenTV-0.3.16-guard-diagnostics.apk',
-  filename: 'OpenTV-0.3.16-guard-diagnostics.apk',
-  bytes: 1859049,
+  downloadUrl: '/downloads/OpenTV-0.3.17-guard-diagnostics.apk',
+  filename: 'OpenTV-0.3.17-guard-diagnostics.apk',
+  bytes: 1867273,
 };
 
 export const installSteps: InstallStep[] = [
